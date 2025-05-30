@@ -2,11 +2,28 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Moderación</title>
+  <title>Moderación – Registro</title>
+  <style>
+    body { font-family: sans-serif; max-width: 480px; margin: 2rem auto; padding: 1rem; }
+    label { display: block; margin: .5rem 0; }
+    input { width: 100%; padding: .5rem; box-sizing: border-box; }
+    button { margin-top: 1rem; padding: .75rem 1.5rem; cursor: pointer; }
+  </style>
 </head>
 <body>
-  <h1>¡Hola, mundo!</h1>
-  <p>Este es mi sitio en GitHub Pages.</p>
+  <h1>Registro de Moderadores</h1>
+  <form id="signup-form">
+    <label>
+      Nombre:
+      <input type="text" id="name" placeholder="Tu nombre" required>
+    </label>
+    <label>
+      Correo:
+      <input type="email" id="email" placeholder="tu@correo.com" required>
+    </label>
+    <button type="submit">Enviar registro</button>
+  </form>
+
   <script src="assets/js/app.js"></script>
 </body>
 </html>
